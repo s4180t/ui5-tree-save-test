@@ -13,7 +13,8 @@
     "@openui5/sap.ui.table": "^1"
   },
   "devDependencies": {
-    "@ui5/cli": "^2.0.0"
+    "@ui5/cli": "^2.0.0",
+    "eslint": "^7.30.0"
   },
   "main": "Component.js",
   "license": "ISC"

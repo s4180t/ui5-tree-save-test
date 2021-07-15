@@ -1,0 +1,17 @@
+{
+    "env": {
+        "browser": true,
+        "es2020": true
+    },
+    "globals": {
+        "sap": "readonly"
+    },
+    "extends": "eslint:recommended",
+    "parserOptions": {
+        "ecmaVersion": 11,
+        "sourceType": "module"
+    },
+    "rules": {
+        "semi": [1, "always"]
+    }
+}

@@ -12,7 +12,15 @@
         <m:content>
             <TreeTable
                     id="TreeTableBasic"
-                    rows="{path:'/catalog/clothing', parameters: {arrayNames:['categories']}}"
+                    rows="{
+                        path:'/catalog/clothing',
+                        parameters: {
+                            arrayNames: ['categories']
+                        },
+                        events: {
+                            change: '.onTreeTableBindingChange'
+                        }
+                    }"
                     selectionMode="MultiToggle"
                     enableSelectAll="false"
                     ariaLabelledBy="title">
@@ -23,6 +31,7 @@
                         <m:Button text="Collapse all" press="onCollapseAll"/>
                         <m:Button text="Collapse selection" press="onCollapseSelection"/>
                         <m:Button text="Expand first level" press="onExpandFirstLevel"/>
+                        <m:Button text="Expand first two levels" press="onExpandFirstTwoLevels"/>
                         <m:Button text="Expand selection" press="onExpandSelection"/>
                     </m:OverflowToolbar>
                 </extension>
